@@ -1,11 +1,33 @@
 import * as React from 'react';
 import ComposePanel from './ComposePanel';
 import Tweet from './Tweet';
+import { gql } from "@apollo/client"
+import { useGetTimelineTweetsQuery } from "./generated/graphql"
 
 export interface TimelineProps {
   currentUserId: string;
   currentUserFavorites: string[];
 }
+
+export const GET_TIMELINE_TWEETS = gql`
+  query GetTimelineTweets {
+    tweets {
+      id
+      body
+      stats {
+        favoriteCount
+        retweetCount
+        commentCount
+      }
+      createdAt
+      author {
+        name
+        handle
+        avatarUrl
+      }
+    }
+  }
+`
 
 const TWEETS = [
   {
@@ -46,10 +68,16 @@ const Timeline: React.FC<TimelineProps> = ({
   currentUserFavorites,
   currentUserId,
 }) => {
+  const { loading, error, data } = useGetTimelineTweetsQuery()
+if (loading) return <p>Loading...</p>
+if (error) return <p>Error: {error}</p>
+if (!data) return <p>No data!</p>
+const { tweets } = data
+if (!tweets) return <p>No tweets!</p>
   return (
     <div id="timeline">
       <ComposePanel currentUser={{ id: currentUserId }} />
-      {TWEETS.map((t) => {
+      {tweets.map((t) => {
         const author = t.author;
         if (!author) throw new Error(`Tweet ${t.id} has no author!`);
         const isFavorited = currentUserFavorites.includes(t.id);
