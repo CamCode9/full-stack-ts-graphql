@@ -34,6 +34,48 @@
       "createdAt": "2022-03-23T03:55:59.614Z",
       "updatedAt": "2022-03-23T03:55:59.614Z",
       "id": "tweet-1220baa2-2092-4ed8-a72c-91757dc508f7"
+    },
+    {
+      "message": "First tweet baby!",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-08-19T09:00:29.897Z",
+      "updatedAt": "2022-08-19T09:00:29.897Z",
+      "id": "tweet-55ee5732-1c58-40ed-9bdd-bf18138a6372"
+    },
+    {
+      "message": "agian",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-08-19T09:38:04.273Z",
+      "updatedAt": "2022-08-19T09:38:04.273Z",
+      "id": "tweet-52714c5f-8728-4a63-9d2d-e20d6cfaf771"
+    },
+    {
+      "message": "again again",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-08-19T09:38:15.437Z",
+      "updatedAt": "2022-08-19T09:38:15.437Z",
+      "id": "tweet-7f2d757c-9d90-4446-8426-0c83c9808388"
+    },
+    {
+      "message": "working/",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-08-19T09:43:53.624Z",
+      "updatedAt": "2022-08-19T09:43:53.624Z",
+      "id": "tweet-33d39f8b-92dc-4f60-ad79-42d36fdb6267"
+    },
+    {
+      "message": "working w tweet count",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-08-19T09:44:10.357Z",
+      "updatedAt": "2022-08-19T09:44:10.357Z",
+      "id": "tweet-58f9ef8f-2a04-4b11-940f-016251a6f40b"
+    },
+    {
+      "message": "hello",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-08-19T12:51:49.612Z",
+      "updatedAt": "2022-08-19T12:51:49.612Z",
+      "id": "tweet-bf86a889-45be-4ca3-af8b-beb700db8503"
     }
   ],
   "users": [
@@ -158,28 +200,19 @@
   ],
   "topicTrends": [
     {
-      "topic": "Frontend Masters",
-      "tweetCount": 12345,
-      "kind": "topic",
-      "id": "topictrend-4f992d65-e229-48f2-b523-2faba1343f3e"
-    },
-    {
       "topic": "Pointless Suggestions",
       "tweetCount": 999,
       "kind": "topic",
       "id": "topictrend-73f3c816-b1fc-456d-8c45-beb9c657a663"
-    }
-  ],
-  "topicTrendQuotes": [
+    },
     {
       "topic": "Frontend Masters",
       "tweetCount": 12345,
-      "title": "Frontend Masters",
-      "description": "Launch of new full stack TS course",
-      "imageUrl": "http://localhost:3000/static/fem_logo.png",
-      "topicTrendId": "topictrend-4f992d65-e229-48f2-b523-2faba1343f3e",
-      "id": "topictrendquote-43d669bc-885b-4012-a4e6-653e38a6c521"
-    },
+      "kind": "topic",
+      "id": "topictrend-4f992d65-e229-48f2-b523-2faba1343f3e"
+    }
+  ],
+  "topicTrendQuotes": [
     {
       "topic": "Pointless Suggestions",
       "tweetCount": 999,
@@ -188,6 +221,15 @@
       "imageUrl": "http://localhost:3000/static/clippy-logo.jpeg",
       "topicTrendId": "topictrend-73f3c816-b1fc-456d-8c45-beb9c657a663",
       "id": "topictrendquote-d0e1ba0a-fa05-400a-9b94-7403b82ab0f4"
+    },
+    {
+      "topic": "Frontend Masters",
+      "tweetCount": 12345,
+      "title": "Frontend Masters",
+      "description": "Launch of new full stack TS course",
+      "imageUrl": "http://localhost:3000/static/fem_logo.png",
+      "topicTrendId": "topictrend-4f992d65-e229-48f2-b523-2faba1343f3e",
+      "id": "topictrendquote-43d669bc-885b-4012-a4e6-653e38a6c521"
     }
   ],
   "suggestions": [
